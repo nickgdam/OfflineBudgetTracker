@@ -1,5 +1,5 @@
 let db;
-// creating a new db
+// creating a new indexDB to use offline
 const request = indexedDB.open("budget", 1);
 
 request.onupgradeneeded = function(event) {
